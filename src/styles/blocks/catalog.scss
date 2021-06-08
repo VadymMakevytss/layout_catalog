@@ -17,21 +17,16 @@
     width: 160px;
     text-align: center;
     margin: 29px auto;
-    transition: width, height, margin, border;
+    transition: transform 0.4s,  margin, border;
   }
   &__link:hover {
-    width: 200px;
-    height: 169px;
+    margin-top: 28px;
     border: 3px solid #f3f3f3;
-    margin: 0 auto -5px;
-    transition-duration: 0.4s;
+    transform: scale(1.25);
     transition-timing-function: linear;
   }
   &__link:not(:hover) {
-    width: 160px;
-    margin: 29px auto;
-    border: none;
-    transition-duration: 0.4s;
+    transform: scale(1);
     transition-timing-function: linear;
   }
   &__image {
