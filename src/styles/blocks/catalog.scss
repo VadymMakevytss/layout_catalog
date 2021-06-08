@@ -17,16 +17,25 @@
     width: 160px;
     text-align: center;
     margin: 29px auto;
+    transition: transform 0.4s,  margin;
+  }
+  &__link:hover {
+    margin-top: 28px;
+    border: 3px solid #f3f3f3;
+    transform: scale(1.25);
+    transition-timing-function: linear;
+  }
+  &__link:not(:hover) {
+    transform: scale(1);
+    transition-timing-function: linear;
   }
   &__image {
     width: 100%;
-    height: 134px;
   }
   &__title {
     margin: 41px 14px 0;
     font-size: 12px;
     width: 170px;
-    // height: 36px;
     font-weight: 500;
     line-height: 16px;
   }
